@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Alice pelo mundo</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <h3>Alice pelo mundo</h3>
+
+            <!--botão sidebar-->
+           <button type="button" id="sidebarCollapse" class="btn btn-info btn-dark">
+                <i class="fas fa-align-justify"></i>
+                <span></span>
+            </button>
+
+
+            <!--searchbar-->
+           <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
+
+
+            <!--Botão contatos-->>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <fa-icon _ngcontent-wpd-c16="" class="ng-fa-icon">
+                        <svg role="img" aria-hidden="true"
+                            focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                            </path>
+                        </svg>
+                    </fa-icon>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-header">
+                        <a class="dropdown-item" href="#">Contatos</a>
+
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Instagram</a>
+                    <a class="dropdown-item" href="#">Facebook</a>
+                    <a class="dropdown-item" href="#">Whatsapp</a>
+                    <a class="dropdown-item" href="#">E-mail</a>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!--sidebar-->
+    <div class="container-fluid">
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <div class="titulo-icone">Lugares</div>
+
+                <li>
+                    <a href="#BrasilSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        Brasil
+                    </a>
+                    <ul class="collapse list-unstyled" id="BrasilSubmenu">
+                        <li>
+                            <a href="#norteSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Norte</a>
+                            <ul class="collapse list-unstyled" id="norteSubsubmenu">
+                                <li>
+                                    <a href="#">Amazonas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#nordesteSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Nordeste</a>
+                            <ul class="collapse list-unstyled" id="nordesteSubsubmenu">
+                                <li>
+                                    <a href="#">Ceará</a>
+                                </li>
+                                <li>
+                                    <a href="#">Alagoas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bahia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#sulSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Sul</a>
+                            <ul class="collapse list-unstyled" id="sulSubsubmenu">
+                                <li>
+                                    <a href="#">Rio Grande do Sul</a>
+                                </li>
+                                <li>
+                                    <a href="#">Santa Catarina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#sudesteSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Sudeste</a>
+                            <ul class="collapse list-unstyled" id="sudesteSubsubmenu">
+                                <li>
+                                    <a href="#">Espírito Santo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Minas Gerais</a>
+                                </li>
+                                <li>
+                                    <a href="#">São Paulo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rio de Janeiro</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#centrooesteSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Centro-Oeste</a>
+                            <ul class="collapse list-unstyled" id="centrooesteSubsubmenu">
+                                <li>
+                                    <a href="#">Goiás</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#mundoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        Mundo
+                    </a>
+                    <ul class="collapse list-unstyled" id="mundoSubmenu">
+                        <li>
+                            <a href="#americaSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">América do Sul</a>
+                            <ul class="collapse list-unstyled" id="americaSubsubmenu">
+                                <li>
+                                    <a href="#">Argentina</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chile</a>
+                                </li>
+                                <li>
+                                    <a href="#">EUA</a>
+                                </li>
+                                <li>
+                                    <a href="#">Peru</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#africaSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">África</a>
+                            <ul class="collapse list-unstyled" id="africaSubsubmenu">
+                                <li>
+                                    <a href="#">África do Sul</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#europaSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Europa</a>
+                            <ul class="collapse list-unstyled" id="europaSubsubmenu">
+                                <li>
+                                    <a href="#">Alemanha</a>
+                                </li>
+                                <li>
+                                    <a href="#">Áustria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Espanha</a>
+                                </li>
+                                <li>
+                                    <a href="#">França</a>
+                                </li>
+                                <li>
+                                    <a href="#">Grécia</a>
+                                </li>
+                                <li>
+                                    <a href="#">Inglaterra</a>
+                                </li>
+                                <li>
+                                    <a href="#">Itália</a>
+                                </li>
+                                <li>
+                                    <a href="#">Malta</a>
+                                </li>
+                                <li>
+                                    <a href="#">República Tcheca</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#centrooesteSubsubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Ásia</a>
+                            <ul class="collapse list-unstyled" id="centrooesteSubsubmenu">
+                                <li>
+                                    <a href="#">Turquia</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <div class="titulo-icone">Hospedagem</div>
+                <li>
+                    <a href="#">Hotel</a>
+                </li>
+                <li>
+                    <a href="#">Hostel</a>
+                </li>
+                <div class="titulo-icone">Intercâmbio</div>
+                <li>
+                    <a href="#">África do Sul</a>
+                </li>
+                <li>
+                    <a href="#">França</a>
+                </li>
+            </ul>
+
+            <div class="sb-sidebar-footer">
+                <div class="small">Alice pelo mundo</div>
+                <span>Blog de viagem</span>
+            </div>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container-fluid">
+                <div id="content">
+
+                    <!-- Dashbord -->
+                    <h1>Pelo Mundo</h1>
+                    
+                    <!-- Lugares breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"></a>Lugares</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Mundo</li>
+                        </ol>
+                    </nav>
+
+                    <!-- cards imagens -->
+                    <div class="row">
+                        <div class="col mb-6 col-lg-3">
+                            <div class="card">
+                                <img src="fotos/america.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">América</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-6 col-lg-3">
+                            <div class="card">
+                                <img src="fotos/africa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">África</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-6 col-lg-3">
+                            <div class="card">
+                                <img src="fotos/asia.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ásia</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-6 col-lg-3">
+                            <div class="card">
+                                <img src="fotos/europa1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Europa</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intercâmbio breadcrumb -->
+                    <p></p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Intercâmbio</a></li>
+                        </ol>
+                    </nav>
+                    
+                    <!-- cards imagens-->
+                    <div class="row">
+                        <div class="col-xl-6 ">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h5 class="card-title">África do Sul</h5>
+                                    <img src="fotos/africadosul1.jpg" class="card-img-top" alt="...">
+                                    <p></p>
+                                    <img src="fotos/africadosul2.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">França</h5>
+                                    <img src="fotos/franca1.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
